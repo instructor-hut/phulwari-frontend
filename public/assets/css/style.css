@@ -1,0 +1,447 @@
+body {
+  background-color: white !important;
+}
+
+.root-layout {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  max-height: 100vh !important;
+}
+
+.text-regular {
+    color: #212529;
+}
+
+.text-regular:hover {
+    color: #212529;
+}
+
+/* Base floating animation */
+@keyframes float {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
+/* Floating variants (slight differences look more natural) */
+.float-random-one {
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.float-random-second {
+    animation: float 5s ease-in-out infinite;
+}
+
+.float-random-third {
+    animation: float 5.5s ease-in-out infinite;
+}
+
+
+/* App Layout Styles Start */
+.sidebar-header p {
+  color: #ffffff !important;
+}
+
+.sidebar-header,
+.sidebar-body,
+.sidebar-footer {
+  font-size: 13px !important;
+}
+
+.sidebar-body {
+  background-color: #2B333E;
+}
+
+.sidebar-body .nav-item .active {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: rgb(131, 0, 163);
+}
+
+.sidebar-body .nav-item .active:hover {
+  background-color: rgb(94, 1, 117);
+}
+
+.sidebar-body .nav-item .active-tab {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: #E97132;
+}
+
+.sidebar-body .nav-item .active-tab:hover {
+  background-color: #b75a28;
+}
+
+.nav-link {
+  font-size: 13px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.sidebar-body .nav-link * {
+  color: #ffffff !important;
+}
+
+.sidebar-body .nav-link .badge {
+  color: #ffffff !important;
+}
+
+.sidebar-body .active.nav-link span {
+  color: #ffffff !important;
+}
+
+.sidebar-body .active.nav-link i {
+  color: #ffffff !important;
+}
+
+.sidebar-body .nav-link:hover span {
+  color: #ffffff !important;
+}
+
+.sidebar-body .nav-link:hover i {
+  color: #ffffff !important;
+}
+
+.sidebar-body .active-list {
+  background-color: #2B333E !important;
+}
+
+.sidebar-body .active-list .nav-heading {
+  background-color: #377DFF;
+}
+
+.sidebar-body .active-list .nav-heading span {
+  color: #ffffff !important;
+}
+
+.sidebar-body .active-list .nav-heading i {
+  color: white !important;
+}
+
+.app-sidebar-toggle {
+  font-size: 23px;
+}
+
+.app-header-fixed-margin {
+  margin-bottom: 65px;
+}
+
+.app-footer-fixed-margin {
+  margin-top: 65px;
+}
+
+@media (max-width: 1200px) {
+  .app-header-fixed-margin {
+    margin-bottom: 55px;
+  }
+
+  .app-footer-fixed-margin {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-sidebar-mobile {
+    max-width: 65%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .app-sidebar-mobile {
+    max-width: 35%;
+  }
+}
+
+.sidebar-header,
+.sidebar-footer {
+  padding: 1rem !important;
+  border-width: 0 !important;
+}
+
+@media (max-width: 1200px) {
+
+  .sidebar-header,
+  .sidebar-footer {
+    padding: 0.9rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-header {
+    margin-left: 15.95rem;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .app-footer {
+    margin-left: 15.95rem;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+}
+
+.app-search {
+  width: 57%;
+}
+
+.app-search input {
+  border-width: 0 !important;
+  box-shadow: none !important;
+  min-height: 40px;
+  padding: 0.5rem 1rem 0.5rem 2.75rem !important;
+}
+
+.app-search input:focus {
+  background-color: #f6f7fa !important;
+}
+
+.text-cap {
+  font-size: 10px !important;
+  font-weight: bolder !important;
+  padding: 1.5rem 1.5rem 0.25rem 1.5rem !important;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* App Layout Styles End */
+
+/* App Card Icons Styles Start */
+
+.app-card-icons i {
+  font-size: 30px !important;
+}
+
+/* App Card Icons Styles End */
+
+.responsive-app {
+  width: 85%;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+  .responsive-app {
+    width: 100%;
+  }
+}
+
+.dropstart .dropdown-menu[data-bs-popper]{
+  top: 90% !important;
+  right: 10% !important;
+}
+
+@media (min-width: 1200px) {
+  .dashboard-footer {
+    margin-left: 14.4rem;
+  }
+}
+
+.dropdown-menu {
+  border: 0px!important;
+  border-top-left-radius: 0.375rem !important;
+  border-top-right-radius: 0.375rem !important;
+  box-shadow: 0 0 45px 0 rgba(189, 189, 189, 0.68) !important;
+}
+
+.page-heading {
+  font-size: 13px !important;
+  margin-left: .25rem!important
+}
+
+/* Table Styles Start */
+
+table {
+  max-width: 83.8vw !important;
+  max-height: 90vh !important;
+  border: 0px solid #dee2e6 !important;
+  color: rgb(0, 23, 55) !important;
+}
+
+table:has(td, tr, td, th) {
+  font-size: 12px !important;
+  color: rgb(0, 23, 55) !important;
+  text-align: center !important;
+}
+
+table:has(tr) {
+  line-height: normal !important;
+}
+
+table thead {
+  border-bottom: 1px solid #0c98cd !important;
+}
+
+table thead th:first-child {
+  border-top-left-radius: 0.35rem !important;
+}
+
+table thead th:last-child {
+  border-top-right-radius: 0.35rem !important;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0.35rem !important;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.35rem !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(even)>* {
+  background-color: rgb(247 247 247) !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  background-color: white !important;
+}
+
+.table>.bs-table-striped-bg {
+  background-color: rgb(247 247 247) !important;
+}
+
+.table> :not(caption)>*>* {
+  box-shadow: none !important;
+  border-bottom-width: inherit;
+  color: rgb(0, 23, 55) !important;
+}
+
+table.table-head-non-border thead th:first-child {
+  border-top-left-radius: 0px !important;
+}
+
+table.table-head-non-border thead th:last-child {
+  border-top-right-radius: 0px !important;
+}
+
+table.table-head-non-border tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0px !important;
+}
+
+table.table-head-non-border tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0px !important;
+}
+
+table.table-head-non-border thead {
+  border-bottom-width: 0 !important;
+}
+
+
+.table-bg-remove {
+  width: 100%;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>.bg-red, .table-striped>tbody>tr:nth-of-type(even)>.bg-red{
+  background-color: rgb(250, 127, 127) !important;
+  border: 1px solid rgb(255, 99, 99) !important;
+}
+
+.table thead tr.second-header th {
+  background-color: rgb(243, 243, 243) !important;
+}
+
+.table thead tr.second-header th:first-child {
+  border-top-left-radius: 0px !important;
+}
+
+.table thead tr.second-header th:last-child {
+  border-top-right-radius: 0px !important;
+}
+
+/* Table Styles End */
+
+
+/* React pagination css starts here */
+.pagination_container {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: end;
+}
+
+.react-pagination {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  gap: 3px !important;
+  list-style-type: none;
+}
+
+.react-pagination>li>a {
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  text-decoration: none !important;
+}
+
+.react-pagination>li {
+  border: 1px solid gray;
+  padding: 4px 8px !important;
+  border: 1px solid #e3dada !important;
+  background-color: #f7f7f7;
+  font-size: 13px !important;
+  color: #7f7676 !important;
+}
+
+.react-pagination>li:hover {
+  color: #377DFF !important;
+}
+
+ul.react-pagination {
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.selected {
+  background-color: #377DFF !important;
+}
+
+.disabled_btn {
+  cursor: not-allowed !important;
+}
+
+.previous.disabled_btn {
+  cursor: not-allowed !important;
+}
+
+.prev_link .disabled_link {
+  cursor: not-allowed !important;
+}
+
+.activePage {
+  background-color: #377DFF;
+  color: white;
+}
+
+.prev_link {
+  color: #7f7676 !important;
+}
+
+.prev_link:hover {
+  color: #377DFF !important;
+}
+
+.next_link {
+  color: #7f7676 !important;
+}
+
+.next_link:hover {
+  color: #377DFF !important;
+}
+
+/* React pagination css End here */
+
+
+.btn-sm-top{
+  font-size: 12px !important;
+  padding: 5px 8px !important;
+}

@@ -6,8 +6,9 @@ export default function AuthLayout(props) {
             <div className="d-none d-lg-block col-5">
                 <Image
                     src="/assets/img/login-banner-2.jpg"
-                    width={636}
-                    height={695}
+                    width={500}
+                    height={500}
+                    className="w-100 h-100"
                     style={{ filter: "brightness(60%)" }}
                     alt="PIET Phulwari Login Banner"
                 />

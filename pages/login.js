@@ -85,13 +85,13 @@ export default function Login() {
                 router.push("/app");
             }
             else {
-                res.error.map(error => {
-                    ToastFunction("failed", error?.message);
+                status.error.map(error => {
+                    ToastFunction("error", error?.message);
                 });
             }
         }
         catch (error) {
-            ToastFunction("failed", error?.message);
+            ToastFunction("error", error?.message);
         }
 
         setLoading(false);

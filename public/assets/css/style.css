@@ -264,7 +264,7 @@ table {
 }
 
 table:has(td, tr, td, th) {
-  font-size: 12px !important;
+  font-size: 13px !important;
   color: rgb(0, 23, 55) !important;
   text-align: center !important;
 }
@@ -454,4 +454,14 @@ ul.react-pagination {
 
 .form-control-sm, .form-select-sm {
   min-height: 42px !important;
+}
+
+.modal-header{
+  background-color: #377dff;
+  padding: 12px;
+}
+
+.modal-title{
+  font-size: 14px;
+  margin-left: 10px;
 }

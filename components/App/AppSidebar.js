@@ -1,3 +1,4 @@
+import Logout from "@/utils/logout";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -17,14 +18,10 @@ export default function AppSidebar() {
                     icon="file-description"
                 />
                 <Tab
-                    path="/app/users"
-                    title="Users"
-                    icon="users"
-                />
-                <Tab
-                    path="/app/profile"
-                    title="Profile"
-                    icon="user-cog"
+                    path="/logout"
+                    title="Logout"
+                    icon="logout"
+                    onClick={Logout}
                 />
             </ul>
         </div>
@@ -69,7 +66,7 @@ function Tab(props) {
     }
 
     return (
-        <li className="nav-item mb-3 mb-lg-2">
+        <li className="nav-item mb-3 mb-lg-2" onClick={props.onClick}>
             <Link className={`${props.className} nav-link position-relative ${stripDynamicSegments(router.pathname) === props.path ? "active-tab" : ""}`} href={props.path}>
                 <i className={`ti ti-${props.icon}`}></i>
                 <span className="ms-2">{props.title}</span>

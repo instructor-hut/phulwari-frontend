@@ -716,29 +716,29 @@ export default function Registration() {
                                     <div className="row gy-3">
                                         <div className="col-6">
                                             <p className="mb-1 fw-bolder small">Your Name</p>
-                                            <p className="mb-1 small">{values.name}</p>
+                                            <p className="mb-0 small">{values.name}</p>
                                         </div>
                                         <div className="col-6">
                                             <p className="mb-1 fw-bolder small">Admission Number</p>
-                                            <p className="mb-1 small">{values.admissionNumber}</p>
+                                            <p className="mb-0 small">{values.admissionNumber}</p>
                                         </div>
                                         <div className="col-6">
                                             <p className="mb-1 fw-bolder small">School</p>
-                                            <p className="mb-1 small">{values.school}</p>
+                                            <p className="mb-0 small">{values.school}</p>
                                         </div>
                                         <div className="col-6">
                                             <p className="mb-1 fw-bolder small">Class</p>
-                                            <p className="mb-1 small">{values.className}</p>
+                                            <p className="mb-0 small">{values.className}</p>
                                         </div>
                                         <Condition>
                                             <Condition.When isTrue={!IsEmpty(values.fatherName) && !IsEmpty(values.fatherPhoneNumber)}>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">Father's Name</p>
-                                                    <p className="mb-1 small">{values.fatherName}</p>
+                                                    <p className="mb-0 small">{values.fatherName}</p>
                                                 </div>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">Father's Phone Number</p>
-                                                    <p className="mb-1 small">{values.fatherPhoneNumber}</p>
+                                                    <p className="mb-0 small">{values.fatherPhoneNumber}</p>
                                                 </div>
                                             </Condition.When>
                                         </Condition>
@@ -746,11 +746,11 @@ export default function Registration() {
                                             <Condition.When isTrue={!IsEmpty(values.motherName) && !IsEmpty(values.motherPhoneNumber)}>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">Mother's Name</p>
-                                                    <p className="mb-1 small">{values.motherName}</p>
+                                                    <p className="mb-0 small">{values.motherName}</p>
                                                 </div>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">Mother's Phone Number</p>
-                                                    <p className="mb-1 small">{values.motherPhoneNumber}</p>
+                                                    <p className="mb-0 small">{values.motherPhoneNumber}</p>
                                                 </div>
                                             </Condition.When>
                                         </Condition>
@@ -758,11 +758,11 @@ export default function Registration() {
                                             <Condition.When isTrue={!IsEmpty(values.siblingOneName) && !IsEmpty(values.siblingOneDOB)}>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">1. Sibling's Name</p>
-                                                    <p className="mb-1 small">{values.siblingOneName}</p>
+                                                    <p className="mb-0 small">{values.siblingOneName}</p>
                                                 </div>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">Sibling's D.O.B</p>
-                                                    <p className="mb-1 small">{moment(values.siblingOneDOB).format("DD/MM/YYYY")}</p>
+                                                    <p className="mb-0 small">{moment(values.siblingOneDOB).format("DD/MM/YYYY")}</p>
                                                 </div>
                                             </Condition.When>
                                         </Condition>
@@ -770,11 +770,11 @@ export default function Registration() {
                                             <Condition.When isTrue={!IsEmpty(values.siblingTwoName) && !IsEmpty(values.siblingTwoDOB)}>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">2. Sibling's Name</p>
-                                                    <p className="mb-1 small">{values.siblingTwoName}</p>
+                                                    <p className="mb-0 small">{values.siblingTwoName}</p>
                                                 </div>
                                                 <div className="col-6">
                                                     <p className="mb-1 fw-bolder small">Sibling's D.O.B</p>
-                                                    <p className="mb-1 small">{moment(values.siblingTwoDOB).format("DD/MM/YYYY")}</p>
+                                                    <p className="mb-0 small">{moment(values.siblingTwoDOB).format("DD/MM/YYYY")}</p>
                                                 </div>
                                             </Condition.When>
                                         </Condition>
@@ -789,19 +789,19 @@ export default function Registration() {
                                     <div className="row gy-3">
                                         <div className="col-4">
                                             <p className="mb-1 fw-bolder small">Your Name</p>
-                                            <p className="mb-1 small">{values.name}</p>
+                                            <p className="mb-0 small">{values.name}</p>
                                         </div>
                                         <div className="col-4">
                                             <p className="mb-1 fw-bolder small">Phone Number</p>
-                                            <p className="mb-1 small">{values.phoneNumber}</p>
+                                            <p className="mb-0 small">{values.phoneNumber}</p>
                                         </div>
                                         <div className="col-4">
                                             <p className="mb-1 fw-bolder small">Reference By</p>
-                                            <p className="mb-1 small">{values.referredBy}</p>
+                                            <p className="mb-0 small">{values.referredBy}</p>
                                         </div>
                                         <div className="col">
                                             <p className="mb-1 fw-bolder small">Your Address</p>
-                                            <p className="mb-1 small">{values.address}</p>
+                                            <p className="mb-0 small">{values.address}</p>
                                         </div>
                                     </div>
                                     <p className="mt-4 small text-info" style={{ marginBottom: -20 }}>

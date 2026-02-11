@@ -56,18 +56,6 @@ export default function AppHeader() {
 							<div className="dropdown dropstart me-1" id="myDropdown">
 								<i className="bi bi-chevron-down" style={{ cursor: "pointer" }} type="icon" data-bs-toggle="dropdown" aria-expanded="false" ></i>
 								<ul className="dropdown-menu mt-5">
-									<li>
-										<Link className="dropdown-item small user-select-none" href="/app/profile">
-											<i className="bi bi-person-fill me-2"></i>
-											<span>My Profile</span>
-										</Link>
-									</li>
-									<li>
-										<Link className="dropdown-item small user-select-none" href="/app/profile">
-											<i className="bi bi-key-fill me-2"></i>
-											<span>Change Password</span>
-										</Link>
-									</li>
 									<li onClick={Logout}>
 										<span className="dropdown-item small user-select-none" style={{ cursor: "pointer" }}>
 											<i className="bi bi-box-arrow-right text-danger me-2"></i>
@@ -90,9 +78,6 @@ export default function AppHeader() {
 					<div className="col d-flex align-items-center justify-content-end">
 						<Link className="text-decoration-none text-dark me-3" href="/app">
 							<i className="ti ti-home"></i>
-						</Link>
-						<Link className="text-decoration-none text-dark me-3" href="/app/profile">
-							<i className="ti ti-settings"></i>
 						</Link>
 						<span className="text-decoration-none text-dark me-lg-3" onClick={handleFullScreenToggle} style={{ cursor: "pointer" }}>
 							<i className={`ti ti-${isFullScreen ? "arrows-minimize" : "arrows-maximize"}`}></i>

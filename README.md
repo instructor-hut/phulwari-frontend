@@ -1,6 +1,4 @@
-12-02-2026 -> [
-    Reference Names add**
-    Add front page Banner**
-]
-
-Create Check in System from ERP / APP
+Reference Names add
+Verify Booking (Web)
+ReshareTicket (Web)
+Check In (Web/App)

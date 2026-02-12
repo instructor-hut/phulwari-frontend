@@ -103,6 +103,7 @@ export default function Registrations() {
                     "Referred By",
                     "School",
                     "Class",
+                    "Verified",
                     "Status",
                     "Actions"
                 ]}>
@@ -131,6 +132,16 @@ export default function Registrations() {
                                                 <td>{registration?.className || "-"}</td>
                                                 <td>
                                                     <Condition>
+                                                        <Condition.When isTrue={registration?.verified === "yes"}>
+                                                            <span className="bg-success badge" style={{ fontSize: 11 }}>Yes</span>
+                                                        </Condition.When>
+                                                        <Condition.When isTrue={registration?.verified === "no"}>
+                                                            <span className="bg-danger badge" style={{ fontSize: 11 }}>No</span>
+                                                        </Condition.When>
+                                                    </Condition>
+                                                </td>
+                                                <td>
+                                                    <Condition>
                                                         <Condition.When isTrue={registration?.status === "check-in"}>
                                                             <span className="bg-info badge" style={{ fontSize: 11 }}>Checked In</span>
                                                         </Condition.When>
@@ -145,10 +156,40 @@ export default function Registrations() {
                                                         <ul className="dropdown-menu" aria-labelledby="actions-dropdown">
                                                             <li data-bs-toggle="modal" data-bs-target="#ViewStudentDetails" onClick={() => setStudentDetails(registration)}>
                                                                 <a className="dropdown-item small" href="#">
-                                                                    <i className="ti ti-eye-filled me-3"></i>
-                                                                    <span>View Student</span>
+                                                                    <i className="ti ti-eye me-3"></i>
+                                                                    <span>View {registration?.registerAs === "piet-student" ? "Student" : "Guest"}</span>
                                                                 </a>
                                                             </li>
+                                                            <Condition>
+                                                                <Condition.When isTrue={registration.verified === "no"}>
+                                                                    <li data-bs-toggle="modal" data-bs-target="#VerifyBooking" onClick={() => setStudentDetails(registration)}>
+                                                                        <a className="dropdown-item small" href="#">
+                                                                            <i className="ti ti-checks me-3"></i>
+                                                                            <span>Verify</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </Condition.When>
+                                                            </Condition>
+                                                            <Condition>
+                                                                <Condition.When isTrue={registration.verified === "yes"}>
+                                                                    <li data-bs-toggle="modal" data-bs-target="#ReshareTicket" onClick={() => setStudentDetails(registration)}>
+                                                                        <a className="dropdown-item small" href="#">
+                                                                            <i className="ti ti-brand-whatsapp me-3"></i>
+                                                                            <span>Re-share Ticket</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </Condition.When>
+                                                            </Condition>
+                                                            <Condition>
+                                                                <Condition.When isTrue={registration.verified === "yes" && registration.status === "not-check-in"}>
+                                                                    <li data-bs-toggle="modal" data-bs-target="#CheckIn" onClick={() => setStudentDetails(registration)}>
+                                                                        <a className="dropdown-item small" href="#">
+                                                                            <i className="ti ti-square-check me-3"></i>
+                                                                            <span>Check In</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </Condition.When>
+                                                            </Condition>
                                                         </ul>
                                                     </div>
                                                 </td>

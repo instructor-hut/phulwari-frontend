@@ -261,7 +261,7 @@ export default function Registration() {
                 values.siblingTwoName = "";
                 values.siblingTwoDOB = "";
 
-                validations.invalidName = ""; np
+                validations.invalidName = "";
                 validations.invalidAdmissionNumber = "";
                 validations.invalidPhoneNumber = "";
                 validations.invalidReferredBy = "";

@@ -244,40 +244,40 @@ export default function Registration() {
             if (status.success) {
                 ToastFunction("success", "Registration successful.");
 
-                values.registerAs = "";
-                values.name = "";
-                values.admissionNumber = "";
-                values.phoneNumber = "";
-                values.referredBy = "";
-                values.address = "";
-                values.className = "";
-                values.school = "";
-                values.fatherName = "";
-                values.fatherPhoneNumber = "";
-                values.motherName = "";
-                values.motherPhoneNumber = "";
-                values.siblingOneName = "";
-                values.siblingOneDOB = "";
-                values.siblingTwoName = "";
-                values.siblingTwoDOB = "";
+                // values.registerAs = "";
+                // values.name = "";
+                // values.admissionNumber = "";
+                // values.phoneNumber = "";
+                // values.referredBy = "";
+                // values.address = "";
+                // values.className = "";
+                // values.school = "";
+                // values.fatherName = "";
+                // values.fatherPhoneNumber = "";
+                // values.motherName = "";
+                // values.motherPhoneNumber = "";
+                // values.siblingOneName = "";
+                // values.siblingOneDOB = "";
+                // values.siblingTwoName = "";
+                // values.siblingTwoDOB = "";
 
-                validations.invalidName = ""; np
-                validations.invalidAdmissionNumber = "";
-                validations.invalidPhoneNumber = "";
-                validations.invalidReferredBy = "";
-                validations.invalidAddress = "";
-                validations.invalidClassName = "";
-                validations.invalidSchool = "";
-                validations.invalidFatherName = "";
-                validations.invalidFatherPhoneNumber = "";
-                validations.invalidMotherName = "";
-                validations.invalidMotherPhoneNumber = "";
-                validations.invalidSiblingOneName = "";
-                validations.invalidSiblingOneDOB = "";
-                validations.invalidSiblingTwoName = "";
-                validations.invalidSiblingTwoDOB = "";
+                // validations.invalidName = ""; np
+                // validations.invalidAdmissionNumber = "";
+                // validations.invalidPhoneNumber = "";
+                // validations.invalidReferredBy = "";
+                // validations.invalidAddress = "";
+                // validations.invalidClassName = "";
+                // validations.invalidSchool = "";
+                // validations.invalidFatherName = "";
+                // validations.invalidFatherPhoneNumber = "";
+                // validations.invalidMotherName = "";
+                // validations.invalidMotherPhoneNumber = "";
+                // validations.invalidSiblingOneName = "";
+                // validations.invalidSiblingOneDOB = "";
+                // validations.invalidSiblingTwoName = "";
+                // validations.invalidSiblingTwoDOB = "";
 
-                setStep(1);
+                // setStep(1);
             }
             else {
                 status.error.map(error => {

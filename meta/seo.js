@@ -36,15 +36,17 @@ export default function SEO({ title = "" }) {
             {/* !-- Open Graph / Facebook --> */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content={uri} />
-            <meta property="og:title" content={AppName} />
+            <meta property="og:title" content={FullTitle} />
             <meta property="og:description" content="" />
             <meta property="og:site_name" content={AppName} />
             <meta property="og:image" content="https://pub-2286be779c3642049b13f4c53d776380.r2.dev/assets/home-page-banner-1.jpg" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content={uri} />
-            <meta property="twitter:title" content={title} />
+            <meta property="twitter:title" content={FullTitle} />
             <meta property="twitter:description" content="" />
             <meta property="twitter:image" content="https://pub-2286be779c3642049b13f4c53d776380.r2.dev/assets/home-page-banner-1.jpg" />
 

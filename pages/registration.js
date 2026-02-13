@@ -691,6 +691,15 @@ export default function Registration() {
                                                 <option value="Mr. Rakesh Tayal">Mr. Rakesh Tayal</option>
                                                 <option value="Mr. Shubham Tayal">Mr. Shubham Tayal</option>
                                                 <option value="Mr. Suresh Tayal">Mr. Suresh Tayal</option>
+                                                <option value="Mr. Rajeev Tayal">Mr. Rajeev Tayal</option>
+                                                <option value="Mr. Prateek Tayal">Mr. Prateek Tayal</option>
+                                                <option value="Mr. Pankaj">Mr. Pankaj</option>
+                                                <option value="Dr. Rishabh">Dr. Rishabh</option>
+                                                <option value="Mr. Mohit Chugh">Mr. Mohit Chugh</option>
+                                                <option value="Ms. Priyanka">Ms. Priyanka</option>
+                                                <option value="Ms. Kalpana Latther">Ms. Kalpana Latther</option>
+                                                <option value="Ms. Rekha Bajaj">Ms. Rekha Bajaj</option>
+                                                <option value="Ms. Vaishali">Ms. Vaishali</option>
                                             </select>
                                             <Condition>
                                                 <Condition.When isTrue={!IsEmpty(validations.invalidReferredBy)}>
